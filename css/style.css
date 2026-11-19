@@ -1,0 +1,266 @@
+:root {
+    --bg: #f7f8fc;
+    --surface: #ffffff;
+    --text: #20243a;
+    --muted: #737991;
+    --primary: #6757d9;
+    --border: #e8e9f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+body.dark {
+    --bg: #151626;
+    --surface: #202238;
+    --text: #ffffff;
+    --muted: #b0b3ca;
+    --primary: #a99cff;
+    --border: #343650;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.brand span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-text {
+    color: var(--muted);
+}
+
+.photo-wrap {
+    width: 290px;
+    text-align: center;
+}
+
+.photo-wrap img {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 6px solid var(--surface);
+}
+
+.photo-caption {
+    color: var(--muted);
+}
+
+.primary-link,
+.primary-button {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+.cards {
+    display: flex;
+    gap: 22px;
+}
+
+.info-card {
+    flex: 1;
+    padding: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.info-card p {
+    color: var(--muted);
+}
+
+.contact-section {
+    max-width: 680px;
+    margin: auto;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+    padding: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.form-group {
+    display: grid;
+    gap: 8px;
+}
+
+.form-group input {
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.form-message {
+    color: var(--primary);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+}
+
+.profile-note {
+    text-align: center;
+    color: var(--muted);
+}
+
+.site-footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
