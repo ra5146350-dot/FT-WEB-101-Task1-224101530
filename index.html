@@ -1,0 +1,110 @@
+<!--
+    Student Name: Rana Ayman Mohamed
+    Student ID: 224101530
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal profile page of Rana Ayman Mohamed.">
+    <title>Rana Ayman Mohamed | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home">Rana<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home" class="container">
+        <section class="hero" id="about">
+            <div class="hero-text">
+                <p class="eyebrow">HELLO, I'M</p>
+                <h1>Rana Ayman Mohamed</h1>
+                <p class="subtitle">Computer Science Student</p>
+                <p class="about-text">
+                    I'm a Computer Science student who enjoys learning programming
+                    and machine learning.
+                </p>
+                <a class="primary-link" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="photo-wrap">
+                <img src="images/me.jpg" alt="Profile photo placeholder for Rana Ayman Mohamed">
+                <span class="photo-caption">A little bit about me</span>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I DO</p>
+                <h2>My interests</h2>
+                <p>Things I enjoy learning and doing.</p>
+            </div>
+
+            <div class="cards">
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">✦</div>
+                    <h3>Skills</h3>
+                    <p>HTML, CSS, and Python.</p>
+                </article>
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">⌘</div>
+                    <h3>Learning</h3>
+                    <p>Exploring programming and new technologies.</p>
+                </article>
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">♡</div>
+                    <h3>Hobbies</h3>
+                    <p>Reading, learning new technologies, and coding.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">SAY HELLO</p>
+                <h2>Contact me</h2>
+                <p>Leave your name and email address below.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <button class="primary-button" type="submit">Send message</button>
+                <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="social-links">
+                <a href="https://github.com/ra5146350-dot" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/rana-soliman-6345bb" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:ra5146350@gmail.com">Email</a>
+            </div>
+            <p class="profile-note">Student ID: 224101530</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Rana Ayman Mohamed. All rights reserved.</p>
+    </footer>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span id="themeIcon" aria-hidden="true">☾</span>
+        <span id="themeText">Dark mode</span>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
